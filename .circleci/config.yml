@@ -6,7 +6,7 @@ jobs:
   build: # name of your job
     docker: # executor type
       - image: cimg/base:stable # primary container will run the latest, production-ready base image
-    working_directory: ~/app
+    working_directory: ~/
     steps:
       - node/install
       - checkout
