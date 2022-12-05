@@ -7,8 +7,7 @@ jobs:
       - image: cimg/base:stable # primary container will run the latest, production-ready base image
     steps:
       - checkout
-      - node/install:
-          install-npm: true
+      - node/install
       - run:
           name: Front-End Install
           command: |
