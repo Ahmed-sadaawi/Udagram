@@ -8,7 +8,7 @@ jobs:
     steps:
       - checkout
       - node/install:
-          install-yarn: true
+          install-npm: true
       - run:
           name: Front-End Install
           command: |
@@ -38,5 +38,5 @@ workflows:
   frontend_and_backend:
     jobs:
       - build
-      
+
 # VS Code Extension Version: 1.3.0
