@@ -10,6 +10,7 @@ jobs:
       - checkout
       - run: node --version
       - node/install
+      - node/install-packages
       - aws-cli/setup
       - run:
           name: Front-End Install
