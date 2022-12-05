@@ -21,22 +21,6 @@ jobs:
           command: |
             npm run frontend:install
       - run:
-          name: Fixing Before Building
-          command: |
-            export NODE_OPTIONS=--openssl-legacy-provider
-      - run:
-          name: Install NVM
-          command: |
-            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
-      - run:
-          name: Install node v18.12.1
-          command: |
-            nvm install 18.12.1
-      - run:
-          name: Use 18.12.1
-          command: |
-            nvm use 18.12.1
-      - run:
           name: Front-End Build
           command: |
             npm run frontend:build
