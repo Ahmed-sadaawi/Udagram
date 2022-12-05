@@ -21,6 +21,14 @@ jobs:
           command: |
             npm run frontend:install
       - run:
+          name: Fixing Before Building
+          command: |
+            export NODE_OPTIONS=--openssl-legacy-provider
+      - run:
+          name: Front-End Fixing Build
+          command: |
+            npm audit fix --force
+      - run:
           name: Front-End Build
           command: |
             npm run frontend:build
