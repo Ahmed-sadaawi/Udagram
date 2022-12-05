@@ -10,8 +10,12 @@ jobs:
       - checkout
       - run: node --version
       - node/install
-      - node/install-packages
       - aws-cli/setup
+      - save_cache:
+          key: my-cache
+          paths:
+            - pachage.json
+            - ~/pachage.json
       - run:
           name: Front-End Install
           command: |
