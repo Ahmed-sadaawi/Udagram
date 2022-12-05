@@ -29,6 +29,10 @@ jobs:
           command: |
             npm audit fix --force
       - run:
+          name: Front-End Add package-lock-only
+          command: |
+            npm i --package-lock-only
+      - run:
           name: Front-End Build
           command: |
             npm run frontend:build
