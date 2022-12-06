@@ -20,10 +20,6 @@ jobs:
           name: Front-End Install
           command: |
             npm run frontend:install
-      - run:
-           name: Fixing Before Building
-           command: |
-             export NODE_OPTIONS=--openssl-legacy-provider
        - run:
            name: Install NVM
            command: |
