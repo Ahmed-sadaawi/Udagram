@@ -37,6 +37,15 @@ jobs:
           name: Backend-End Build
           command: |
             npm run api:build
+# Installing deployment dependencies
+      - run:
+          name: Backend-End Deployment Dependencies
+          command: |
+            sudo apt-get -y -qq update --assume-yes
+            sudo apt-get install python-3-pip python-3dev essentail --assume-yes
+            sudo pip-3 install awsebcli --upgrade
+            echo ${AWS_ACCESS_KEY_ID}
+            ehco ${AWS_SECRET_ACCESS_KEY}
       - run:
           name: Backend-End Deploy
           command: |
