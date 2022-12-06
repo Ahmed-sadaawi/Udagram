@@ -39,7 +39,7 @@ jobs:
             npm run api:build
 # Installing deployment dependencies
       - run: sudo apt-get -y -qq update --assume-yes
-      - run: sudo apt-get install python-3-pip python-3dev essentail --assume-yes
+      - run: sudo apt-get install python-3-pip python-3dev build-essentail --assume-yes
       - run: sudo pip-3 install awsebcli --upgrade
       - run: echo ${AWS_ACCESS_KEY_ID}
       - run: ehco ${AWS_SECRET_ACCESS_KEY}
