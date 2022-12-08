@@ -8,7 +8,6 @@ jobs:
       - image: cimg/node:19.1.0
     steps:
       - checkout
-      - run: node --version
       - node/install
       - aws-cli/setup
       - save_cache:
@@ -16,14 +15,22 @@ jobs:
           paths:
             - pachage.json
             - ~/pachage.json
+      # Frontend Install
       - run:
           name: Front-End Install
           command: |
             npm run frontend:install
+      #Frontend Test
+      - run:
+          name: Front-End Test
+          command: |
+            npm run frontend:test
+      #Frontend Build
       - run:
           name: Front-End Build
           command: |
             npm run frontend:build
+      #Frontend Deploy
       - run:
           name: Front-End Deploy
           command: |
