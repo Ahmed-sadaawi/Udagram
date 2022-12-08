@@ -34,7 +34,6 @@ jobs:
       - run:
           name: Front-End Lint
           command: |
-            echo "TODO: Lint the frontend"
             npm run frontend:lint
       # TODO: Build the frontend app
       - run:
