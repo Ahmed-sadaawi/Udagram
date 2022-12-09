@@ -50,6 +50,9 @@ jobs:
           name: API Build
           command: |
             npm run api:build
+            sudo apt update
+            sudo apt install moreutils
+            sudo apt install jq
   # deploy step will run only after manual approval
   deploy:
     docker:
