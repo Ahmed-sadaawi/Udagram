@@ -47,6 +47,7 @@ jobs:
           name: API Build
           command: |
             npm install validator 
+            npm install @types/validator 
             npm run api:build
   # deploy step will run only after manual approval
   deploy:
