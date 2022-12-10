@@ -13,7 +13,7 @@
     "prod": "npx tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
     "aws:eb":"chmod +x bin/aws_eb.sh && bin/aws_eb.sh",
-    "deploy": "npm install . && npm run build && eb init udagram --region us-east-1 && eb list && eb use Udagram-env && eb deploy ",
+    "deploy": "npm install . && npm run build && eb init server --region us-east-1 && eb list && eb use Server-env && eb deploy Server-env",
     "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
