@@ -1,2 +1,2 @@
 ## Infrastructure
-![Infrastructure](../../screenshorts/Infrastructure.png)
+![Infrastructure](../screenshorts/Infrastructure.png)
