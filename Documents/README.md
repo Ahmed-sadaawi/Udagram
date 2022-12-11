@@ -10,7 +10,7 @@
 
 - [GitHub & circleci:](#github-&-circleci)
     - [First `Build` steps:](#first-Build-steps)
-    - [Deploy Steps:](#deploy-steps:)
+    - [Deploy Steps:](#deploy-steps)
 
 - [Testing](#testing)
     - [Unit Tests:](#unit-tests)
