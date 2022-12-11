@@ -3,7 +3,7 @@
 
 # Udagram
 
-This application is provided by udacity as a starter project to the sudents for hosting it to aws services and includes how to Pipeline with Circleci pipeline. It also contains digrams for infrastructure and pipeline steps.
+This application is provided by udacity as a starter project to the sudents for hosting it to aws services and includes how to Pipeline with Circleci pipeline. It also contains diagrams for infrastructure and pipeline steps.
 
 ### Dependencies
 

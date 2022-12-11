@@ -50,7 +50,7 @@ PORT = 8080
 URL  = $URL 
 
 ```
-## AWS Cloud serup:
+## AWS Cloud setup:
 - RDS endpoint: database-1.c7qkyxj8hf5i.us-east-1.rds.amazonaws.com
 - RDS port: 5432
 - RDS name: postgres
