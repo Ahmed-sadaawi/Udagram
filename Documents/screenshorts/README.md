@@ -1,7 +1,7 @@
 # All Screenshots"
 
 ## All_Popelines
-![All_Popelines](All_Popelines.png)
+![All_Pipelines](All_Pipelines.png)
 
 ## udagram
 ![udagram](udagram.png)
@@ -16,7 +16,7 @@
 ![Elastic_Beanstalk_Health](Elastic_Beanstalk_Health.png)
 
 ## EB_Endpoint&port
-![EB_Endpoint&port](EB_Endpoint&port.png)
+![DB_Endpoint&port](DB_Endpoint&port.png)
 
 ## S3_bucket
 ![S3_bucket](S3_bucket.png)
